@@ -1,0 +1,164 @@
+%-------------------------
+% Resume in Latex
+% Author : Matthew Lim
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{www.limmatthew.com/}{\Large Matthew Lim}} & +1-765-426-4473\\
+  \href{www.limmatthew.com/}{limmatthew.com} &  324763 Georgia Tech Station \\
+  \href{mailto:mlim45@gatech.edu}{mlim45@gatech.edu} & Atlanta, GA 30332
+
+\end{tabular*}
+
+
+%-----------LETTER-----------------
+\section{}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Georgia Institute of Technology}{Atlanta, GA}
+      {Candidate for BS in Computer Engineering; Minor in Sustainable Cities;  GPA: 3.91}{Expected May 2020}
+    \resumeSubheading
+      {Universidad Carlos III de Madrid}{Madrid, Spain}
+      {Exchange Program}{Sep. 2018 -- Dec. 2018}
+  \resumeSubHeadingListEnd
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: C++, Java, Python, Javascript, HTML, CSS, Ruby, MATLAB, C, Assembly}
+    }
+    \item{
+	\textbf{Software}{:  Jira, Node.js, Docker, Lambda (AWS), D3js, gtest, PCB Artist, Adobe After Effects, Illustrator, Photoshop, Premiere Pro, Arduino}
+    }
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Autodesk Inc.}{San Francisco, CA}
+      {Software Development Intern}{Sep 2018 - Present}
+      \resumeItemListStart
+        \resumeItem{Part-time}
+          {Working on modernizing Autodesk Screencast web player's five year old codebase and fully documenting additional code for future development. Compartmentalizing custom plugins into standard formats and moving project to latest edition of ASP.net }
+        \resumeItem{Internship}
+          {Updated and added functionality to Autodesk’s Screencast web player, a responsive Javascript application built on an ASP.net framework with over 375,000 monthly users. Worked in a professional scrum environment using Jira and Sourcetree. Fully documented code and presented results to senior leadership.}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Design Bloc / University Innovation Fellowship}{Atlanta, GA}
+      {Teaching Assistant}{Aug 2017 - Present}
+      \resumeItemListStart
+        \item{Planned and managed workshops, events, and media marketing for students, Georgia Tech entrepreneurship programs, and companies like Emerson and Delta.}
+	 \item{Sponsored by Georgia Tech’s College of Design to train at Stanford's Design School. Training included rapid ideation, rapid prototyping, empathy research, interviewing, and rapid iteration.}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {Georgia Tech Research Institute - Electronic Systems Laboratory}{Atlanta, GA}
+      {Research Intern}{July 2017 - Aug 2017}
+      \resumeItemListStart
+        \item{Designed, manufactured, tested, and wrote software for a PCB prototype for a heat-illness monitoring system. Programmed an embedded FPGA in VHDL and an embedded microcontroller in C as well as circuit analysis and oscilloscope usage.}
+      \resumeItemListEnd
+
+
+    \resumeSubheading
+      {"Uber in Cancun" Documentary}{Atlanta, GA}
+      {Executive Producer}{Dec 2016 - Apr 2017}
+      \resumeItemListStart
+        \item{ Coordinated a team to provide equipment, interviews, set up shots, create a comprehensive story, and edit a final documentary about the impact of Uber on the tourism focused and taxi dominated Cancún, Mexico. }
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Supportability Explorer}
+      {Realized an Autodesk UX project prototype to map and visualize consumer support stories in a comprehensive supportability web application using D3js and Bootstrap.}
+    \resumeSubItem{Media-Rating Chrome Extension using Pirate Data}
+      {Stripped seed and leech data from various pirating sites to compute a media relevancy score within a chrome extension.}
+    \resumeSubItem{Sonar Bathymetry Boat}
+      {Used sonar and GPS sensors with Arduino on a RC boat then collected data to to plot real bathymetry maps in MATLAB.}
+    \resumeSubItem{Autonomous Vertical Garden}
+      {Managed a budget of \$2000 and coordinated a team to manufacture an autonomous produce garden through Georgia Tech’s Ideas to Prototype program. }
+  \resumeSubHeadingListEnd
+
+
+
+%-------------------------------------------
+\end{document}
